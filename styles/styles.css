@@ -1,0 +1,69 @@
+.navbar-brand {
+    padding-left: 100px;
+}
+
+.navbar-nav {
+    margin: 11px;
+}
+
+.navbar-nav :hover {
+    background-color: rgb(104, 104, 104);
+    color: rgb(252, 252, 252);
+    border-radius: 15%;
+    transition: .4s ease-in-out;
+}
+
+
+
+.modal-container {
+    z-index: 100;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    /*
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    */
+}
+
+.modal-container .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .modal div {
+    position: relative;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.modal-container .modal div #modal-img {
+    border-radius: 10px;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.modal-container .modal div #closeModal-btn {
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-container .modal div #closeModal-btn:hover {
+    color: white;
+    background-color: gray;
+    transition-duration: 120ms;
+}
